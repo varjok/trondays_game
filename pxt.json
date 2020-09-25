@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "circuit-playground": "*",
-        "maker-controller": "github:microsoft/pxt-maker-controller#v0.0.7"
+        "maker-controller": "github:microsoft/pxt-maker-controller#v0.0.7",
+        "try2": "github:varjok/trondays_game#9f67d595e21833f5716cf4d5f9ebe57be751f4c2"
     },
     "files": [
         "main.blocks",
