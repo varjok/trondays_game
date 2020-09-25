@@ -1,6 +1,7 @@
 input.onGesture(Gesture.Shake, function () {
     makerController.player2.setButton(ArcadeButton.Down, true)
 })
+music.powerUp.play()
 forever(function () {
     while (input.switchRight()) {
         if (input.buttonA.isPressed()) {
