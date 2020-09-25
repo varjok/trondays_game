@@ -1,3 +1,9 @@
+input.buttonA.onEvent(ButtonEvent.Click, function () {
+    makerController.player1.setButton(ArcadeButton.A, true)
+    light.showRing(
+    `blue purple blue purple blue black black black black black`
+    )
+})
 input.onGesture(Gesture.Shake, function () {
     makerController.player2.setButton(ArcadeButton.Down, true)
 })
@@ -8,10 +14,7 @@ light.showRing(
 forever(function () {
     while (input.switchRight()) {
         if (input.buttonA.isPressed()) {
-            makerController.player1.setButton(ArcadeButton.A, true)
-            light.showRing(
-            `blue purple blue purple blue black black black black black`
-            )
+        	
         } else if (input.buttonB.isPressed()) {
             makerController.player1.setButton(ArcadeButton.B, true)
             light.showRing(
